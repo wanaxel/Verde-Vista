@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+  <div id="game-container">
+    <div id="background"></div>\
+    <div id="plant-container"> 
+    <img src="img/flower.png" alt="Plant Image"> 
+    </div>
+    <div id="button-container">
+      <div class="button-wrapper">
+        <button id="water-btn" onclick="waterPlant()">
+          <img src="img/water.png" alt="Water" data-hover="path/to/water-hover.png" data-active="path/to/water-active.png">
+        </button>
+        <div class="button-stats">
+          <div>Water: <span id="water-stat">50</span>/100</div>
+        </div>
+      </div>
+      <div class="button-wrapper">
+        <button id="fert-btn" onclick="fertPlant()">
+          <img src="img/fert.png" alt="Fert" data-hover="path/to/fert-hover.png" data-active="path/to/fert-active.png">
+        </button>
+        <div class="button-stats">
+          <div>Fert: <span id="fert-stat">50</span>/100</div>
+        </div>
+      </div>
+      <div class="button-wrapper">
+        <button id="sun-btn" onclick="sunPlant()">
+          <img src="img/sun.png" alt="Sun" data-hover="path/to/sun-hover.png" data-active="path/to/sun-active.png">
+        </button>
+        <div class="button-stats">
+          <div>Sun: <span id="sun-stat">50</span>/100</div>
+        </div>
+      </div>
+      <div class="button-wrapper">
+        <button id="kill-btn" onclick="killPlant()">
+        <img src="img/kill.png" alt="Kill" data-hover="path/to/kill-hover.png" data-active="path/to/kill-active.png">
+        </button>
+      </div>
+    </div>
+  </div>
+  <script src="js/script.js"></script>
+</body>
+</html>
